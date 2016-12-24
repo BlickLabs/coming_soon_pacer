@@ -211,7 +211,7 @@ p
 
 .side-left
   background $background_color
-  padding-top 11%
+  padding-top 9%
 
   .small-hr
     margin-top 17px
@@ -607,20 +607,39 @@ rotate()
   &:hover, &:focus, &:active
     color $primery_color
 
+
+.form-message
+  padding-left 0
+  color $primery_color
+
+  &.error
+    color red
+
+  &.success
+    color green
+
+  &.mobilemessage
+    display none
+
+  &:not(.mobilemessage)
+    padding-top 0
+
+#contact .main-menu
+  align-items center
+  display flex
+  justify-content space-between
+  margin 26px 0
+
+  .close-notify
+    margin 0
+    flex-basis 41px
+
+  .form-message
+    flex-basis calc(100% - 61px)
+
 .notify-wrap
   i
     display none
-
-  #message
-    padding-left 0
-    padding-top 15px
-    color $primery_color
-
-    &.success
-      color green
-
-    &.error
-      color red
 
   .btn
     margin-top 25px
@@ -1227,10 +1246,15 @@ border-widthc()
       .copyright
         margin-top 20px
 
-  #message
-    font-size 12px
-    padding-top 15px
-    padding-bottom 20px
+  .form-message
+    &:not(.mobilemessage)
+      display none
+
+    &.mobilemessage
+      display block
+      font-size 12px
+      padding-top 15px
+      padding-bottom 20px
 
   .page
     position static
