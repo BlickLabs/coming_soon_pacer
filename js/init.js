@@ -37,7 +37,7 @@ $(document).ready(function(){
 /*****Load function start*****/
 $(window).load(function(){
 	animateStart();
-	$(".preloader-it").delay(800).fadeOut("slow");
+	$(".preloader-it").delay(800).fadeOut(350);
 	$("body").css('overflow-y','visible');
 });
 /*****Load function* end*****/
